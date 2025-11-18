@@ -43,7 +43,7 @@ public class cal {
                         System.out.println("숫자를 입력해야 합니다!");
                         sc.nextLine();
                     }
-                }
+            }
 
                 // 연산자 입력
                 while (true)
@@ -120,11 +120,10 @@ public class cal {
 
                 // 결과 저장
                 if (operations.equals("sqrt"))
-                {
                     msg = "결과: sqrt(" + num1 + ") = " + result;
-                } else {
+                else 
                     msg = "결과: " + num1 + " " + operations + " " + num2 + " = " + result;
-                }
+                
 
                 msg_list[n % msg_list.length] = msg;
                 n++;
@@ -157,11 +156,10 @@ public class cal {
 
             // 종료
             else if (choice.equals("0"))
-            {
                 return;
-            } else {
+            else 
                 System.out.println("숫자를 입력해주세요");
-            }
         }
     }
 }
+
